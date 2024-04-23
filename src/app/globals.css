@@ -3,11 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255; */
+  background-color: #f6f5f2;
+}
+.nav_links {
+  @apply hover:text-custom_blue text-lg font-medium;
 }
 
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -30,4 +35,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
