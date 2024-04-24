@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="px-6 md:px-60 grid grid-cols-2 min-h-screen items-center bg-white">
+    <section id="about" className="px-6 md:px-60 grid grid-cols-2 min-h-screen items-center bg-white">
       <aside>
         <Image src="/about/about_Image.jpg" alt="o" height={500} width={500} />
       </aside>

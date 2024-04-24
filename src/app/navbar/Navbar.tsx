@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header className="flex items-center justify-between  shadow-md h-20 px-60 bg-white">
+    <header className="flex items-center justify-between shadow-md h-20 px-60 bg-white">
       <h3>
         Raghul<code>.Dev &#128187;</code>
       </h3>

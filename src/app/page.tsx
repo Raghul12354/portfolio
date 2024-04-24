@@ -1,6 +1,9 @@
 import Navbar from "./navbar/Navbar";
 import Hero from "./hero/Hero";
 import About from "./about/About";
+import Contact from "./contact/Contact";
+import Projects from "./projects/Projects";
+import Footer from "./footer/Footer";
 
 export default function Home() {
   return (
@@ -9,9 +12,9 @@ export default function Home() {
       <Hero />
       {/* stack */}
       <About />
-      {/* project */}
-      {/* contact */}
-      {/* footer */}
+      <Projects />
+      <Contact />
+      <Footer />
     </main>
   );
 }

@@ -7,9 +7,10 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255; */
   background-color: #f6f5f2;
+  scroll-behavior: smooth;
 }
 .nav_links {
-  @apply hover:text-custom_blue text-lg font-medium;
+  @apply hover:text-custom_blue text-lg font-medium duration-300;
 }
 
 /* 
