@@ -6,7 +6,7 @@ export default function UpArrow() {
       viewBox="0 0 24 24"
       strokeWidth={2}
       stroke="currentColor"
-      className="w-8 h-8 cursor-pointer hover:text-custom_blue duration-300"
+      className="w-8 h-8 cursor-pointer text-white hover:text-custom_blue duration-300"
     >
       <path
         strokeLinecap="round"

@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-white shadow-xl min-h-full w-screen px-6 md:px-60"
+      className="bg-white shadow-xl min-h-full w-screen px-6 md:px-60 py-10"
     >
       <div className="grid md:grid-cols-2 items-center">
         <Image
