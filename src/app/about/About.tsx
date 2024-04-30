@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id="about" className="px-6 md:px-60 grid grid-cols-2 min-h-screen items-center bg-white">
       <aside>
-        <Image src="/about/about_Image.jpg" alt="o" height={500} width={500} />
+        <Image src="/about/About_blue.png" alt="o" height={500} width={500} />
       </aside>
       <div className="">
         <h4 className="text-custom_blue text-2xl font-medium mb-2">About Me</h4>

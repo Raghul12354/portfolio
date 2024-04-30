@@ -38,7 +38,7 @@ const Contact = () => {
             </li>
             <li className="cursor-pointer flex items-center gap-2">
               <button className="bg-white shadow-md p-3 rounded-full">
-                <LinkedIn />
+                <LinkedIn styleProp="text-custom_blue" />
               </button>
               <Link
                 target="_blank"
@@ -51,7 +51,7 @@ const Contact = () => {
             </li>
             <li className="cursor-pointer flex items-center gap-2 ">
               <button className="bg-white shadow-md p-3 rounded-full">
-                <Github />
+                <Github styleProp="text-custom_blue" />
               </button>
               <Link target="_blank" href="https://github.com/Raghul12354">
                 <p className="font-lg font-medium hover:text-custom_blue duration-200">
