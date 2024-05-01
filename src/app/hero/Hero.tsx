@@ -6,9 +6,7 @@ import Github from "../components/Icons/Github";
 
 const Hero = () => {
   return (
-    <section className="px-6 md:px-60 h-screen w-screen">
-      {/* hero content 
-        btn for project */}
+    <section className="px-6 md:px-60 h-[90vh] w-screen flex flex-col justify-center">
       <div className="grid grid-cols-2 gap-20 place-items-center">
         <article>
           <h1 className="text-5xl font-bold flex gap-3">
@@ -41,25 +39,25 @@ const Hero = () => {
       <div className="flex items-center gap-16 mt-20">
         <h3 className="text-lg font-semibold">Tech Stack</h3>
         <ul className="flex gap-10">
-          <li title="HTML & CSS">
+          <li className="cursor-pointer" title="HTML & CSS">
             <img src="https://skillicons.dev/icons?i=html,css" alt="" />
           </li>
-          <li title="ReactJs & MaterialUI">
+          <li className="cursor-pointer" title="ReactJs & MaterialUI">
             <img src="https://skillicons.dev/icons?i=react,materialui" alt="" />
           </li>
-          <li title="NextJs & TailWindCSS">
+          <li className="cursor-pointer" title="NextJs & TailWindCSS">
             <img
               src="https://skillicons.dev/icons?i=nextjs,tailwindcss"
               alt=""
             />
           </li>
-          <li title="JavaScript & TypeScript">
+          <li className="cursor-pointer" title="JavaScript & TypeScript">
             <img
               src="https://skillicons.dev/icons?i=javascript,typescript"
               alt=""
             />
           </li>
-          <li title="Github & Visual Studio Code">
+          <li className="cursor-pointer" title="Github & Visual Studio Code">
             <img src="https://skillicons.dev/icons?i=github,vscode" alt="" />
           </li>
         </ul>

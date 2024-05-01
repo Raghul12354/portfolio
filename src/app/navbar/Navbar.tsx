@@ -1,10 +1,13 @@
+import { Merienda } from "next/font/google";
 import Link from "next/link";
 
+const merienda = Merienda({ subsets: ["latin"], weight: ["300", "400"] });
 const Navbar = () => {
   return (
     <header className="flex items-center justify-between shadow-md h-20 px-60 bg-white">
-      <h3>
-        Raghul<code>.Dev &#128187;</code>
+      <h3 className={`${merienda.className} text-2xl`}>
+        Raghul Krishna
+        {/* <code>.Dev &#128187;</code> */}
       </h3>
       <nav className="flex gap-10">
         <Link className="nav_links" href="/">
