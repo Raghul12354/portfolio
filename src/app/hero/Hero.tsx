@@ -6,39 +6,39 @@ import Github from "../components/Icons/Github";
 
 const Hero = () => {
   return (
-    <section className="px-6 md:px-60 h-[90vh] w-screen flex flex-col justify-center">
-      <div className="grid grid-cols-2 gap-20 place-items-center">
+    <section className="px-6 sm:px-12 md:px-20 lg:px-40 xl:px-60 min-h-full md:h-[90vh] w-screen flex flex-col justify-center py-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 place-items-center text-center md:text-left">
         <article>
-          <h1 className="text-5xl font-bold flex gap-3">
+          <h1 className="text-3xl md:text-5xl font-bold flex gap-3 items-center">
             Front-End Web Developer
             <Image
               src="/hero/website-codes_4305000.png"
               alt=""
               width={100}
               height={100}
-              className="w-16 h-14"
+              className="w-12 h-10 md:w-16 md:h-14"
             />
           </h1>
-          <h5 className="text-lg text-gray-700 my-8">
-            Hey there &#128075;, I'm Raghul Krishna from India. I'm passionate
+          <h5 className="text-sm md:text-lg text-gray-700 my-5 md:my-8">
+            Hey there &#128075;, I&apos;m Raghul Krishna from India. I&apos;m passionate
             about building websites and enjoy collaborating with others
           </h5>
           {/* icons */}
-          <div className="flex gap-5">
-            <Link href="">
-              <LinkedIn styleProp="text-black hover:text-custom_blue duration-300 w-9 h-9" />
+          <div className="flex gap-5 justify-center md:justify-start">
+            <Link target="_blank" href="https://www.linkedin.com/in/raghul-krishna-r12/">
+              <LinkedIn styleProp="text-black hover:text-custom_blue duration-300 w-7 h-7 md:w-9 md:h-9" />
             </Link>
-            <Link href="">
-              <Github styleProp="text-black hover:text-custom_blue duration-300 w-9 h-9" />
+            <Link target="_blank" href="https://github.com/Raghul12354">
+              <Github styleProp="text-black hover:text-custom_blue duration-300 w-7 h-7 md:w-9 md:h-9" />
             </Link>
           </div>
         </article>
-        <Image src="/hero/Hero_Image.png" alt="" width={500} height={500} />
+        <Image src="/hero/Hero_Image.png" alt="hero_banner" width={500} height={500} />
       </div>
       {/* tech stack */}
-      <div className="flex items-center gap-16 mt-20">
-        <h3 className="text-lg font-semibold">Tech Stack</h3>
-        <ul className="flex gap-10">
+      <div className="flex flex-col lg:flex-row items-center gap-5 md:gap-16 mt-10 md:mt-20">
+        <h3 className="text-base md:text-lg font-semibold">Tech Stack</h3>
+        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-7 md:gap-10">
           <li className="cursor-pointer" title="HTML & CSS">
             <img src="https://skillicons.dev/icons?i=html,css" alt="" />
           </li>
@@ -57,7 +57,7 @@ const Hero = () => {
               alt=""
             />
           </li>
-          <li className="cursor-pointer" title="Github & Visual Studio Code">
+          <li className="cursor-pointer col-span-2 sm:col-auto flex justify-center" title="Github & Visual Studio Code">
             <img src="https://skillicons.dev/icons?i=github,vscode" alt="" />
           </li>
         </ul>

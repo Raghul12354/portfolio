@@ -1,17 +1,17 @@
-export default function UpArrow() {
+export default function MenuIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
-      strokeWidth={2}
+      strokeWidth={1.5}
       stroke="currentColor"
-      className="w-7 md:w-8 h-7 md:h-8 cursor-pointer text-white hover:text-custom_blue duration-300"
+      className="w-8 h-8"
     >
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
-        d="m4.5 15.75 7.5-7.5 7.5 7.5"
+        d="M3.75 9h16.5m-16.5 6.75h16.5"
       />
     </svg>
   );

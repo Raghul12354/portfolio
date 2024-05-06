@@ -1,4 +1,4 @@
-export default function Gmail() {
+export default function Gmail({ classProp }: { classProp: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,7 +6,7 @@ export default function Gmail() {
       viewBox="0 0 24 24"
       strokeWidth={2}
       stroke="currentColor"
-      className="w-7 h-7 text-custom_blue"
+      className={classProp}
     >
       <path
         strokeLinecap="round"
