@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -5,11 +7,21 @@ import Github from "../components/Icons/Github";
 import Gmail from "../components/Icons/Gmail";
 import LinkedIn from "../components/Icons/LinkedIn";
 
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+
 const Contact = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <section
+      ref={ref}
+      style={{
+        transform: isInView ? "none" : "scale(1)",
+        opacity: isInView ? 1 : 0,
+      }}
       id="contact"
-      className="px-6 sm:px-12 md:px-20 lg:px-40 xl:px-60 bg-white shadow-xl min-h-full w-screen py-10"
+      className="ease-in-out duration-1000 px-6 sm:px-12 md:px-20 lg:px-40 xl:px-60 bg-white shadow-xl min-h-full w-screen py-10"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 items-center md:gap-20">
         <Image
