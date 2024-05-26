@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     basePath: "/portfolio",
-    output: "export",  // <=== enables static exports
+    output: "export",
     images: {
-        domains: ['skillicons.dev']
+        domains: ['skillicons.dev'],
+        unoptimized: true,
     }
 };
 
