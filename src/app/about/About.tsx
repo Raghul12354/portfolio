@@ -22,7 +22,7 @@ const About = () => {
         className="order-2 md:order-1 ease-in-out duration-1000"
       >
         <Image
-          src="/about/About_blue.png"
+          src="/portfolio/about/About_blue.png"
           alt="about_image"
           height={500}
           width={500}

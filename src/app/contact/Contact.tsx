@@ -25,7 +25,7 @@ const Contact = () => {
     >
       <div className="grid grid-cols-1 md:grid-cols-2 items-center md:gap-20">
         <Image
-          src="/contact/contact_Image.jpg"
+          src="/portfolio/contact/contact_Image.jpg"
           alt="contact_vector"
           width={500}
           height={500}

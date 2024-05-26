@@ -26,7 +26,7 @@ const Hero = () => {
           <h1 className="text-3xl lg:text-4xl font-bold flex gap-3 items-center">
             Front-End Web Developer
             <Image
-              src="/hero/website-codes_4305000.png"
+              src="/portfolio/hero/website-codes_4305000.png"
               alt=""
               width={64}
               height={64}
@@ -52,7 +52,7 @@ const Hero = () => {
           </div>
         </article>
         <Image
-          src="/hero/Hero_Image.png"
+          src="/portfolio/hero/Hero_Image.png"
           alt="hero_banner"
           width={500}
           height={500}
