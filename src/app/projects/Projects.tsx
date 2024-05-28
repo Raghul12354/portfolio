@@ -21,7 +21,7 @@ const Projects = () => {
     //     </article>
     //   </div>
     // </section>
-    <div className="text-2xl font-semibold h-80 grid place-items-center">New Projects are on the way!</div>
+    <div id="projects" className="text-2xl font-semibold h-80 grid place-items-center">New Projects are on the way!</div>
   );
 };
 
