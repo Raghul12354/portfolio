@@ -21,12 +21,12 @@ const Hero = () => {
       }}
       className="ease-in-out duration-1000 2xl:max-w-7xl xl:max-w-6xl lg:max-w-5xl mx-auto min-h-full md:h-[90vh] flex flex-col justify-center py-20"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 place-items-center text-center md:text-left">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-20 place-items-center text-center md:text-left">
         <article>
           <h1 className="text-3xl lg:text-4xl font-bold flex gap-3 items-center">
             Front-End Web Developer
             <Image
-              src="/portfolio/hero/website-codes_4305000.png"
+              src="/hero/website-codes_4305000.png"
               alt=""
               width={64}
               height={64}
@@ -52,7 +52,7 @@ const Hero = () => {
           </div>
         </article>
         <Image
-          src="/portfolio/hero/Hero_Image.png"
+          src="/hero/Hero_Image.png"
           alt="hero_banner"
           width={500}
           height={500}
