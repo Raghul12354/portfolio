@@ -23,14 +23,14 @@ const Hero = () => {
     >
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-20 place-items-center text-center md:text-left">
         <article>
-          <h1 className="text-3xl lg:text-4xl font-bold flex gap-3 items-center">
+          <h1 className="text-2xl lg:text-4xl font-bold flex gap-3 items-center justify-center md:justify-start mt-10 md:mt-0">
             Front-End Web Developer
             <Image
-              src="/hero/website-codes_4305000.png"
+              src="/portfolio/hero/website-codes_4305000.png"
               alt=""
               width={64}
               height={64}
-              className="w-12 h-10 md:w-12 md:h-12"
+              className="w-12 h-10 md:w-12 md:h-12 hidden md:block"
             />
           </h1>
           <h5 className="text-sm md:text-lg text-gray-700 my-5 md:my-8">
@@ -52,7 +52,7 @@ const Hero = () => {
           </div>
         </article>
         <Image
-          src="/hero/Hero_Image.png"
+          src="/portfolio/hero/Hero_Image.png"
           alt="hero_banner"
           width={500}
           height={500}

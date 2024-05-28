@@ -1,20 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import { Merienda } from "next/font/google";
+import Drawer_comp from "@/components/Drawer";
 import Link from "next/link";
-
-import CloseIcon from "../components/Icons/CloseIcon";
-import MenuIcon from "../components/Icons/MenuIcon";
 
 const merienda = Merienda({ subsets: ["latin"], weight: ["300", "400"] });
 
 const Navbar = () => {
-  const [showLinks, setShowLinks] = useState(false);
-
-  const handleLinks = () => {
-    setShowLinks(!showLinks);
-  };
   return (
     <header className="flex items-center justify-between shadow-md h-16 md:h-20 px-6 md:px-60 bg-white fixed w-screen">
       <div className="text-center">
@@ -31,11 +23,7 @@ const Navbar = () => {
           </h4>
         </Link>
       </div>
-      <nav
-        className={`${
-          showLinks ? "flex" : "hidden"
-        } md:flex flex-col md:flex-row gap-10`}
-      >
+      <nav className="hidden md:flex gap-10">
         <Link className="nav_links" href="/">
           Home
         </Link>
@@ -49,8 +37,10 @@ const Navbar = () => {
           Contact
         </Link>
       </nav>
-      <button onClick={handleLinks} className="block md:hidden">
-        {showLinks ? <CloseIcon /> : <MenuIcon />}
+      <button
+        className="block md:hidden"
+      >
+        <Drawer_comp />
       </button>
     </header>
   );
