@@ -52,7 +52,7 @@ const Hero = () => {
           </div>
         </article>
         <Image
-          src="/portfolio/hero/Hero_Image.png"
+          src="/hero/Hero_Image.png"
           alt="hero_banner"
           width={500}
           height={500}
