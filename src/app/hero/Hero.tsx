@@ -19,7 +19,7 @@ const Hero = () => {
         transform: isInView ? "none" : "scale(1)",
         opacity: isInView ? 1 : 0,
       }}
-      className="ease-in-out duration-1000 2xl:max-w-7xl xl:max-w-6xl lg:max-w-5xl mx-auto min-h-full md:h-[90vh] flex flex-col justify-center py-20"
+      className="ease-in-out duration-[1200ms] 2xl:max-w-7xl xl:max-w-6xl lg:max-w-5xl mx-auto min-h-full md:h-[90vh] flex flex-col justify-center py-20"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-20 place-items-center text-center md:text-left">
         <article>
@@ -38,7 +38,6 @@ const Hero = () => {
             passionate about building websites and enjoy collaborating with
             others
           </h5>
-          {/* icons */}
           <div className="flex gap-5 justify-center md:justify-start">
             <Link
               target="_blank"
@@ -50,6 +49,11 @@ const Hero = () => {
               <Github styleProp="text-black hover:text-custom_blue duration-300 w-7 h-7 md:w-9 md:h-9" />
             </Link>
           </div>
+          <Link href="#projects">
+            <button className="text-xl font-medium bg-[#00aeffc7] w-40 h-14 rounded-lg mt-10 hover:bg-blue-300 hover:text-white transition-all duration-300">
+              Projects
+            </button>
+          </Link>
         </article>
         <Image
           src="/portfolio/hero/Hero_Image.png"
@@ -57,6 +61,8 @@ const Hero = () => {
           width={500}
           height={500}
         />
+
+        {/* icons */}
       </div>
       {/* tech stack */}
       <div className="flex flex-col lg:flex-row items-center gap-5 md:gap-16 mt-10 md:mt-20">
