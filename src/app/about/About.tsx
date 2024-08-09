@@ -43,11 +43,13 @@ const About = () => {
           Frontend Web Developer
         </h2>
         <p
-          className={`mt-3 md:mt-5 text-gray-500 text-sm sca md:text-lg leading-relaxed`}
+          className={`mt-3 md:mt-5 text-gray-500 text-sm md:text-lg leading-relaxed`}
         >
-          Hey, I&apos;m <b>Raghul Krishna</b> I specialize in creating clean,
-          responsive websites that shine on every screen. With my current stack
-          of <b>Next.js, Tailwind CSS, and TypeScript</b>, I ensure simplicity
+          I&apos;m a <strong>self-taught web developer</strong> who discovered
+          my passion during college. What started as a YouTube course quickly
+          became my career path. I specialize in{" "}
+          <strong>Next.js and Tailwind CSS</strong>, creating responsive web
+          applications. I ensure simplicity
           and functionality in every project I tackle.
         </p>
         <p className="mt-5 text-gray-500 text-sm md:text-lg leading-relaxed">

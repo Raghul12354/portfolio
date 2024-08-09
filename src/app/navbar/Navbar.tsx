@@ -8,7 +8,7 @@ const merienda = Merienda({ subsets: ["latin"], weight: ["300", "400"] });
 
 const Navbar = () => {
   return (
-    <header className="flex items-center justify-between shadow-md h-16 md:h-20 px-6 md:px-60 bg-white fixed w-screen">
+    <header className="flex items-center justify-between shadow-md h-16 md:h-20 px-6 md:px-60 bg-white fixed w-screen z-10">
       <div className="text-center">
         <Link href="/">
           <h3

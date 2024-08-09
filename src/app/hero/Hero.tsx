@@ -34,9 +34,11 @@ const Hero = () => {
             />
           </h1>
           <h5 className="text-sm md:text-lg text-gray-700 my-5 md:my-8">
-            Hey there &#128075;, I&apos;m Raghul Krishna from India. I&apos;m
-            passionate about building websites and enjoy collaborating with
-            others
+            Hey there<span> &#128075;</span>, I&apos;m{" "}
+            <strong>Raghul Krishna</strong> from <strong>Chennai</strong>{" "}
+            <span>&#128205;</span>
+            .I&apos;m passionate about building websites and enjoy collaborating
+            with others
           </h5>
           <div className="flex gap-5 justify-center md:justify-start">
             <Link
@@ -50,7 +52,7 @@ const Hero = () => {
             </Link>
           </div>
           <Link href="#projects">
-            <button className="text-xl font-medium bg-[#00aeffc7] w-40 h-14 rounded-lg mt-10 hover:bg-blue-300 hover:text-white transition-all duration-300">
+            <button className="text-base md:text-xl font-medium mt-10 px-8 md:px-10 py-3 md:py-4 rounded-full cursor-pointer border-0 bg-white shadow-[0_0_8px_rgb(0_0_0/5%)] tracking-wider uppercase text-[15px] transition-all duration-500 ease-in-out hover:tracking-widest hover:bg-[hsl(261,80%,48%)] hover:text-white hover:shadow-[0_7px_29px_0_rgb(93_24_220)] active:tracking-widest active:bg-[hsl(261,80%,48%)] active:text-white active:shadow-[0_0_0_0_rgb(93_24_220)] active:translate-y-2 active:transition-[100ms]">
               Projects
             </button>
           </Link>
