@@ -83,7 +83,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 place-items-center gap-10 md:gap-20">
         <Item
           title="TripGo"
-          img="portfolio/projects/tour_bg.png"
+          img="/portfolio/projects/tour_bg.png"
           link="https://tripgo-raghul12354s-projects.vercel.app/"
           tech="Next.js, TailWindCSS, TypeScript, Shadcn/ui, Git"
           pointsProp={[
