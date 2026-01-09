@@ -36,25 +36,22 @@ const About = () => {
           opacity: isInView ? 1 : 0,
         }}
       >
-        <h4 className="text-custom_blue text-lg md:text-2xl font-medium mb-2">
+        <h2 className="text-custom_blue text-lg md:text-4xl font-medium mb-2">
           About Me
-        </h4>
-        <h2 className="text-2xl md:text-4xl font-semibold">
-          Frontend Web Developer
         </h2>
-        <p
-          className={`mt-3 md:mt-5 text-gray-500 text-sm md:text-lg leading-relaxed`}
-        >
-          I&apos;m a <strong>self-taught web developer</strong> who discovered
-          my passion during college. What started as a YouTube course quickly
-          became my career path. I specialize in{" "}
-          <strong>Next.js and Tailwind CSS</strong>, creating responsive web
-          applications. I ensure simplicity
-          and functionality in every project I tackle.
+        {/* <h2 className="text-2xl md:text-4xl font-semibold">
+          Frontend Web Developer
+        </h2> */}
+        <p className="mt-3 md:mt-5 text-gray-500 text-sm md:text-lg leading-relaxed">
+          I&apos;m a <strong>self-taught web developer</strong>. I started
+          building web apps during college to explore how things work, and it
+          quickly became my career path. I specialize in
+          <strong> Next.js and Tailwind CSS</strong>, creating responsive web
+          applications with simplicity and functionality in mind.
         </p>
         <p className="mt-5 text-gray-500 text-sm md:text-lg leading-relaxed">
-          Excited to dive into Web3, I&apos;m all about staying ahead in the
-          ever-evolving world of web development.
+          I&apos;m currently open to opportunities where I can grow and
+          contribute to meaningful products.
         </p>
       </div>
     </section>

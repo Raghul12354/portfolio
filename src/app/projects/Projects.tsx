@@ -6,9 +6,17 @@ import Image from "next/image";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
-const Item = ({ title, img, link, divOrder, imgOrder, tech }: any) => {
+const Item = ({
+  title,
+  img,
+  link,
+  divOrder,
+  imgOrder,
+  tech,
+  pointsProp,
+}: any) => {
   return (
-    <article className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-10">
+    <article className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-10 md:gap-20">
       <Link href={link} target="_blank" className={`relative ${imgOrder}`}>
         <div className="bg-black rounded-lg">
           <Image
@@ -25,11 +33,14 @@ const Item = ({ title, img, link, divOrder, imgOrder, tech }: any) => {
           Tech Stack: <span className="font-medium text-gray-700">{tech}</span>
         </p>
         <p className="text-2xl md:text-3xl capitalize font-semibold">{title}</p>
-        <p className="text-gray-700">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-          suscipit dicta molestiae exercitationem nemo repellendus ut minima
-          quasi animi et?
-        </p>
+        <ul className="text-gray-700 list-disc pl-5 space-y-2">
+          {pointsProp.map((point: string, index: number) => (
+            <li key={index} className="text-sm md:text-base">
+              {point}
+            </li>
+          ))}
+        </ul>
+
         <Link href={link} target="_blank" className="">
           <button className="cta flex items-center">
             <span className="hover-underline-animation mr-2 md:text-lg font-medium">
@@ -71,11 +82,19 @@ const Projects = () => {
     >
       <div className="grid grid-cols-1 place-items-center gap-10 md:gap-20">
         <Item
-          title="viji tours and travels"
-          img="/portfolio/projects/tours_bg.png"
-          link="https://viji-tours.vercel.app/"
+          title="TripGo"
+          img="portfolio/projects/tour_bg.png"
+          link="https://tripgo-raghul12354s-projects.vercel.app/"
           tech="Next.js, TailWindCSS, TypeScript, Shadcn/ui, Git"
+          pointsProp={[
+            "Developed a tour website to gain practical experience with Next.js and backend concepts",
+            "Implemented authentication using NextAuth to secure the dashboard",
+            "Built an admin dashboard to view user-submitted form data from PostgreSQL",
+            "Added functionality to create and manage tour content and images from the dashboard",
+            "Implemented dynamic pages so newly added tours display automatically on the site",
+          ]}
         />
+
         <Item
           title="React projects"
           img="/portfolio/projects/react_bg.png"
@@ -83,12 +102,13 @@ const Projects = () => {
           divOrder="md:order-1"
           imgOrder="md:order-2"
           tech="React.js, Tailwind CSS, Git, Netlify"
-        />
-        <Item
-          title="nike shoes"
-          img="/portfolio/projects/nike_bg.png"
-          link="https://nike-project-kappa.vercel.app/"
-          tech="Next.js, Redux, Tailwind CSS, Git, vercel"
+          pointsProp={[
+            "Built small React projects to practice and explore React concepts",
+            "Worked with hooks like useState and useEffect to manage state and interactions",
+            "Got comfortable updating the UI based on user actions",
+            "Used JavaScript methods like map, filter, reduce and other ES6 features",
+            "Styled the projects using Tailwind CSS for a clean look",
+          ]}
         />
       </div>
     </section>
