@@ -73,16 +73,8 @@ const Projects = () => {
         <Item
           title="viji tours and travels"
           img="/portfolio/projects/tours_bg.png"
-          link="https://viji-tours.vercel.app/"
+          link="https://tripgo-raghul12354s-projects.vercel.app/"
           tech="Next.js, TailWindCSS, TypeScript, Shadcn/ui, Git"
-        />
-        <Item
-          title="React projects"
-          img="/portfolio/projects/react_bg.png"
-          link="https://react-projects12.netlify.app/"
-          divOrder="md:order-1"
-          imgOrder="md:order-2"
-          tech="React.js, Tailwind CSS, Git, Netlify"
         />
         <Item
           title="nike shoes"
